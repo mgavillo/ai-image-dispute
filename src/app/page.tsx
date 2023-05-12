@@ -85,7 +85,7 @@ export default function Home({ children }: { children: ReactNode }) {
 
   const [deepFakeDetector, setDeepFakeDetector] = useState(
     new ethers.Contract(
-      "0x4E55936be13827D27823D5a8093D8d7C269e88f5",
+      "0x85627Ef94079BDFcC5c6079e2CE266Fd9A2C5841",
       detectorAbi,
       signer
     )
@@ -239,7 +239,7 @@ export default function Home({ children }: { children: ReactNode }) {
       {!selectedImage && !cid && (
         <div className="flex items-center justify-center h-screen flex-col">
           <div className="text-3xl font-bold">Upload your image</div>
-          <div className="text-xl font-semibold mb-12">assert it's not AI generated, get challenged before settled</div>
+          <div className="text-xl font-semibold mb-12">assert it's not AI generated, get challenged before it's settled</div>
           <div style={{ width: "calc(100vw /3)", height: "calc(100vw /3)" }}>
             <SelectImage onImageChange={onImageChange} />
           </div>
